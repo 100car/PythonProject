@@ -19,6 +19,7 @@ metadata.reflect(bind=engine)
 
 tables = metadata.tables # словник з таблицями бази даних
 
+
 # ■ Вивести назви всіх таблиць у базі даних.
 def show_table_names():
     print("Таблицi:")
@@ -74,7 +75,6 @@ def report_all_groups_with_faculty():
     for row in results:
         print('\t'.join(f"{str(data) if data is not None else '':<15}" for data in row))
 
-
 # ▷ вивести інформацію про конкретного teacher
 def report_teacher(teacher_id):
     query_text = f"""
@@ -98,7 +98,6 @@ def report_teacher(teacher_id):
     # Дані
     for row in results:
         print('\t'.join(f"{str(data) if data is not None else '':<15}" for data in row))
-
 
 # ▷ вивести назви груп, що належать до конкретного факультету,
 def report_groups_by_faculty(faculty_id):
@@ -131,6 +130,7 @@ def report_subjects_by_teacher(teacher_id):
     print(f"Предмети викладача з id={teacher_id}:")
     for row in results:
         print(f"- {row[0]}")
+
 
 report_all_groups()
 print()
