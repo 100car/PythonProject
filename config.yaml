@@ -1,0 +1,16 @@
+project:
+  name: recipes
+  shared_dictionaries_dir: "../DATA_DICTIONARIES"
+
+paths:
+  in_dir: "FROM_SELLER"
+  out_dir: "OUT"
+  log_dir: "LOGS"
+
+parsing:
+  input_extensions: [".xlsx", ".xls", ".pdf"]
+
+logging:
+  level: "INFO"
+  file_name: "run.log"
+

@@ -162,3 +162,11 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
+# runtime folders
+FROM_SELLER/
+OUT/
+LOGS/
+
+# optional: local override config
+config.local.yaml
+
